@@ -77,7 +77,7 @@ with css:
   "Also you can use class and id at the SAME TIME"
   st.subheader("Make a shadow")
   "write this in html BODY!"
-  st.code("<h1 id="addashadow">Text</h1>")
+  st.code('<h1 id="addashadow">Text</h1>')
   "In .Css"
   st.code("#addashadow{text-shadow: px px px namecolor or rgb, ...(this process can be used multiple times}")
   "Make sure to write ; at the end of each"
