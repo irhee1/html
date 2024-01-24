@@ -1,5 +1,5 @@
 import streamlit as st
-html, css, javascript, more = steamlit.tabs(["html","css","javascript", "more"])
+html, css, javascript, more = st.tabs(["html","css","javascript", "more"])
 with html:
   st.header("Format of an html")
   st.code('<html>')
