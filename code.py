@@ -140,7 +140,7 @@ with more:
   'In the .js file:'
   st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite"')
   'button onclick'
-  'in your html file
+  'in your html file'
   st.code('<button id ="name">name</button>')
   'in your js file'
   st.code('document.getElementById("name").onclick = function()')
