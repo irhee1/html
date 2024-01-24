@@ -21,7 +21,7 @@ with css:
 st.header("What to do")
 "Make a file and end it with a .css"
 "Example"
-image.load("Screenshot 2024-01-23 at 7.46.51 PM.png")
+image.load("SScreenshot 2024-01-23 at 7.44.54 PM.png")
 "Or use style in text"
 mage
 st.header("Highlight")
