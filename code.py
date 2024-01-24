@@ -108,6 +108,6 @@ with more:
   'connect it to the html'
   st.code('<script src="nameofyourjs.js"></script>')
   'in the js file'
-  st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite")
+  st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite"')
   
   
