@@ -34,33 +34,33 @@ with css:
   st.image("Screenshot 2024-01-23 at 7.46.51 PM.png")
   st.header("Option 1")
   st.subheader("Add css")
-  "in the body write this"
+  "in the head write this"
   "<head>"
   '<link rel="stylesheet" href="(name of .css).css">'
   "<head>"
   st.subheader("Edit body of html")
   "---"
   st.code("body{")
-  st.code('margin: 0px(distance of text and images on ALL sides')
-  st.code('background-color: (colors[example:tomato;] or rgb[example:rgb(0, 0, 0)]')
-  st.code('border: 3px(wide) solid(types of borders:solid, dashed, dotted, double, groove, ridge, inset, outset, none)')
-  st.code("display:flow-root(so images don't get out of the border)")
+  st.code('margin: 0px(distance of text and images on ALL sides(you can use margin left, right, up, and down));')
+  st.code('background-color: (colors[example:tomato;] or rgb[example:rgb(0, 0, 0);]')
+  st.code('border: 3px(wide) solid(types of borders:solid, dashed, dotted, double, groove, ridge, inset, outset, none);')
+  st.code("display:flow-root(so images don't get out of the border);")
   st.code("}")
   st.subheader("Edit text like <p></p> or <h1></h1>")
   st.code('p{')
   st.code('color:color of the font')
-  st.code('font-family: (types of fonts[example:"lucida console or "courier new"])')
-  st.code('font-weight: bold')
-  st.code('font-size: 50px')
-  st.code('font-style:(styles[example:italic])')
-  st.code('border: 3px border(look at body border(same idea)) rgb(100, 100, 100)(color of the border)')
-  st.code('you can also do it in border-top and left and right and bottom')
+  st.code('font-family: (types of fonts[example:"lucida console"; or "courier new";])')
+  st.code('font-weight: bold;')
+  st.code('font-size: 50px;')
+  st.code('font-style:(styles[example:italic;])')
+  st.code('border: 3px border_name(look at body border(same idea)) rgb(100, 100, 100)(color of the border);')
+  st.code('#you can also do it in border-top and left and right and bottom')
   "Example:"
   st.code('border-top: 3px solid rgb(255, 255, 255);')
   st.code('border-left: 3px dotted rgb(0, 255, 0);')
   st.code('border-right: 3px dotted rgb(0, 255, 0);')
   st.code('border-bottom: 3px solid rgb(255, 255, 255);')
-  st.code('border-radius: (how curvy the border is[example: 25px])')
+  st.code('border-radius: (how curvy the border is[example: 25px]);')
   st.code('}')
   st.subheader("use id and classes")
   st.code('use #nameid for id="id"')
@@ -82,7 +82,32 @@ with css:
   st.code("#addashadow{text-shadow: px px px namecolor or rgb, ...(this process can be used multiple times}")
   "Make sure to write ; at the end of each"
 with javascript:
-  st.header("Not available yet")
+  st.header("Add javascript")
+  "Step 1: make a .js file"
+  "Step 2: type this line to the body of the html to run the javascript"
+  st.code('<script src="nameofyourjs.js"></script>')
+  st.header("Beginner Javascript")
+  'variables:'
+  st.code('let num = 10(int) or "happy"(str) or True(boolean);')
+  'or'
+  st.code('let num;')
+  st.code('num = value;')
+  'write values'
+  st.code('console.log("This will appear in the console");')
+  st.code('document.write("This will show on the website")')
+  st.code('alert("This will make an alert")')
+  'input'
+  st.code('ask-the-user=prompt("I think im asking the user! ")')
+  "p.s: make sure to add ; to the end of every line of code"
 with more:
-  st.header("Not availiable yet")
+  'write stuff in js using id'
+  'Example:'
+  "in the body"
+  st.code('<p id="selected-id"></p>')
+  'make a .js file'
+  'connect it to the html'
+  st.code('<script src="nameofyourjs.js"></script>')
+  'in the js file'
+  st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite")
+  
   
