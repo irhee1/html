@@ -1,7 +1,15 @@
 import streamlit as st
 html, css, javascript, more = steamlit.tabs(["html","css","javascript", "more"])
 with html:
+  st.header("Format of an html")
+  st.code('<html>')
+  st.code('  <head>')
+  st.code('  </head>')
+  st.code('  <body>')
+  st.code('  </body>')
+  st.code('</html>')
   st.header("Types of text and stuff")
+  "---"
   st.code("<h1></h1> to <h5></h5> (bigger text to smaller text)")
   st.code("<p></p> is a paragraph text (automatecaly starts at a new line (<br>)")
   st.code("<pre></pre> is a paragraph text but it keeps its format")
@@ -31,6 +39,7 @@ with css:
   '<link rel="stylesheet" href="(name of .css).css">'
   "<head>"
   st.subheader("Edit body of html")
+  "---"
   st.code("body{")
   st.code('margin: 0px(distance of text and images on ALL sides')
   st.code('background-color: (colors[example:tomato;] or rgb[example:rgb(0, 0, 0)]')
@@ -64,6 +73,14 @@ with css:
   st.code('<p class="name"></p>')
   "In .Css file"
   st.code(".name{}")
+  "Ps. make sure to know id can only be used once while class can be used multiple times"
+  "Also you can use class and id at the SAME TIME"
+  st.subheader("Make a shadow")
+  "write this in html BODY!"
+  st.code("<h1 id="addashadow">Text</h1>")
+  "In .Css"
+  st.code("#addashadow{text-shadow: px px px namecolor or rgb, ...(this process can be used multiple times}")
+  "Make sure to write ; at the end of each"
 with javascript:
   st.header("Not available yet")
 with more:
