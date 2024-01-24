@@ -88,9 +88,9 @@ with javascript:
   st.code('<script src="nameofyourjs.js"></script>')
   st.header("Beginner Javascript")
   'variables:'
-  st.code('let num = 10(int) or "happy"(str) or True(boolean);')
+  st.code('var num = 10(int) or "happy"(str) or True(boolean);')
   'or'
-  st.code('let num;')
+  st.code('var num;')
   st.code('num = value;')
   'write values'
   st.code('console.log("This will appear in the console");')
@@ -98,16 +98,27 @@ with javascript:
   st.code('alert("This will make an alert")')
   'input'
   st.code('ask-the-user=prompt("I think im asking the user! ")')
-  "p.s: make sure to add ; to the end of every line of code"
+  'if statements'
+  st.code('if ([string or int] [== or > or <] "something"){
+  st.code('(tab) something()')
+  st.code('}')
+  'else if and elif:'
+  st.code('(else if (str > 20){}) and else{}')
+  'while loop'
+  st.code('while (condition){do something}')
+  'random number'
+  st.code('let random-number = Math.floor(Math.random() * max (if only ); is after it, max-1) + min')
+  'p.s: list is same as python, except you need a #var'
+  "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 with more:
-  'write stuff in js using id'
+  'Write stuff in js using id'
   'Example:'
   "in the body"
   st.code('<p id="selected-id"></p>')
   'make a .js file'
   'connect it to the html'
   st.code('<script src="nameofyourjs.js"></script>')
-  'in the js file'
+  'In the .js file:'
   st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite"')
   
   
