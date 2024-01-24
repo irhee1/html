@@ -99,7 +99,7 @@ with javascript:
   'input'
   st.code('ask-the-user=prompt("I think im asking the user! ")')
   'if statements'
-  st.code('if ([string or int] [== or > or <] "something"){
+  st.code('if ([string or int] [== or > or <] "something"){')
   st.code('(tab) something()')
   st.code('}')
   'else if and elif:'
