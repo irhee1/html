@@ -18,14 +18,54 @@ with html:
   "Example:"
   st.code('<video src="videoplaying.mp4" controls></video>')
 with css:
-st.header("What to do")
-"Make a file and end it with a .css"
-"Example"
-image.load("SScreenshot 2024-01-23 at 7.44.54 PM.png")
-"Or use style in text"
-mage
-st.header("Highlight")
-
+  st.header("What to do")
+  "Make a file and end it with a .css (option 1)"
+  "Example"
+  image.load("Screenshot 2024-01-23 at 7.44.54 PM.png")
+  "Or use style in text (option 2)"
+  image.load("Screenshot 2024-01-23 at 7.46.51 PM.png")
+  st.header("Option 1")
+  st.subheader("Add css")
+  "in the body write this"
+  "<head>"
+  '<link rel="stylesheet" href="(name of .css).css">'
+  "<head>"
+  st.subheader("Edit body of html")
+  st.code("body{")
+  st.code('margin: 0px(distance of text and images on ALL sides')
+  st.code('background-color: (colors[example:tomato;] or rgb[example:rgb(0, 0, 0)]')
+  st.code('border: 3px(wide) solid(types of borders:solid, dashed, dotted, double, groove, ridge, inset, outset, none)')
+  st.code("display:flow-root(so images don't get out of the border)")
+  st.code("}")
+  st.subheader("Edit text like <p></p> or <h1></h1>")
+  st.code('p{')
+  st.code('color:color of the font')
+  st.code('font-family: (types of fonts[example:"lucida console or "courier new"])')
+  st.code('font-weight: bold')
+  st.code('font-size: 50px')
+  st.code('font-style:(styles[example:italic])')
+  st.code('border: 3px border(look at body border(same idea)) rgb(100, 100, 100)(color of the border)')
+  st.code('you can also do it in border-top and left and right and bottom')
+  "Example:"
+  st.code('border-top: 3px solid rgb(255, 255, 255);')
+  st.code('border-left: 3px dotted rgb(0, 255, 0);')
+  st.code('border-right: 3px dotted rgb(0, 255, 0);')
+  st.code('border-bottom: 3px solid rgb(255, 255, 255);')
+  st.code('border-radius: (how curvy the border is[example: 25px])')
+  st.code('}')
+  st.subheader("use id and classes")
+  st.code('use #nameid for id="id"')
+  "Example:"
+  st.code('<p id="name"></p>')
+  "In .Css file"
+  st.code("#name{}")
+  st.code('use .nameclass for class="class')
+  "Example:"
+  st.code('<p class="name"></p>')
+  "In .Css file"
+  st.code(".name{}")
 with javascript:
-st.header("Not available yet")
+  st.header("Not available yet")
+with more:
+  st.header("Not availiable yet")
   
