@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 html, css, javascript, more = st.tabs(["html","css","javascript", "more"])
 with html:
   st.header("Format of an html")
