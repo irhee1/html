@@ -29,9 +29,9 @@ with css:
   st.header("What to do")
   "Make a file and end it with a .css (option 1)"
   "Example"
-  image.load("Screenshot 2024-01-23 at 7.44.54 PM.png")
+  st.image("Screenshot 2024-01-23 at 7.44.54 PM.png")
   "Or use style in text (option 2)"
-  image.load("Screenshot 2024-01-23 at 7.46.51 PM.png")
+  st.image("Screenshot 2024-01-23 at 7.46.51 PM.png")
   st.header("Option 1")
   st.subheader("Add css")
   "in the body write this"
