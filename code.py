@@ -25,6 +25,15 @@ with html:
   st.code('<video></video> is playing a video(has the same controls as audio and img)')
   "Example:"
   st.code('<video src="videoplaying.mp4" controls></video>')
+  "Make a simple and advanced list"
+  st.code("<ul></ul> and <li></li> is for a list")
+  "Example"
+  st.code("<ul>")
+  st.code('(tab) <li>Something<li>')
+  st.code('<ul>')
+  st.code('<button></buttton> is for a button')
+  "Example"
+  st.code('<button>Name of this button</button>')
 with css:
   st.header("What to do")
   "Make a file and end it with a .css (option 1)"
@@ -80,6 +89,13 @@ with css:
   st.code('<h1 id="addashadow">Text</h1>')
   "In .Css"
   st.code("#addashadow{text-shadow: px px px namecolor or rgb, ...(this process can be used multiple times}")
+  "Add css to a button"
+  st.code('button{')
+  st.code('font-size:px;')
+  st.code('background-color:namecolor or rgbcolor;')
+  st.code('color:coloragain;')
+  st.code('border-reduis:px(how curvy it is)')
+  st.code('}')
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
@@ -108,6 +124,8 @@ with javascript:
   st.code('while (condition){do something}')
   'random number'
   st.code('let random-number = Math.floor(Math.random() * max (if only ); is after it, max-1) + min')
+  'function'
+  st.code('function nameoffunction{next line}')
   'p.s: list is same as python, except you need a #var'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 with more:
@@ -120,5 +138,8 @@ with more:
   st.code('<script src="nameofyourjs.js"></script>')
   'In the .js file:'
   st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite"')
-  
-  
+  'button onclick'
+  'in your html file
+  st.code('<button id ="name">name</button>')
+  'in your js file'
+  st.code('document.getElementById("name").onclick = function()')
