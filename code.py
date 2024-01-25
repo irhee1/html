@@ -136,6 +136,9 @@ with css:
   \noverflow: (visible:shows text, hidden:content that you don't see is hidden, scroll:shows a scroll, auto: shows a scroll if it's needed)
   \n}
   ''')
+  '<div></div> and <span></span>:'
+  st.code('''
+  #div highlights a block while span only highlights unless you add (display: block;) to span{}''')
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
