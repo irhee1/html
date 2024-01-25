@@ -11,6 +11,8 @@ with html:
   st.code('  <body>')
   st.code('  </body>')
   st.code('</html>')
+  "write this to name you website(in head)"
+  st.code('<title>NameofWeb</title>')
   st.header("Types of text and stuff")
   "---"
   st.code("<h1></h1> to <h5></h5> (bigger text to smaller text)")
