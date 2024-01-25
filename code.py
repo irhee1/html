@@ -14,6 +14,7 @@ with html:
   st.code("<h1></h1> to <h5></h5> (bigger text to smaller text)")
   st.code("<p></p> is a paragraph text (automatecaly starts at a new line (<br>)")
   st.code("<pre></pre> is a paragraph text but it keeps its format")
+  st.code("<hr> is used to make a line")
   st.code("<a></a> is used to make a link")
   "Example:"
   st.code('<a href="https://www.yourlink.com" target="_none"(_none or _parent) title="This will pop up when your cursor is on the link">this is the name of the link</a>')
@@ -32,9 +33,30 @@ with html:
   st.code("<ul>")
   st.code('(tab) <li>Something<li>')
   st.code('<ul>')
+  st.code('''
+  <dl></dl>, <dt></dt>, and <dd></dd> can be used to also make a list
+  \n#Example:
+  \n<dl>
+  \n<dt>topic</dt>
+  \n<dd>facts facts factz</dd>
+  \n</dl>
+  ''')
   st.code('<button></buttton> is for a button')
-  "Example"
+  "Example:"
   st.code('<button>Name of this button</button>')
+  "label"
+  st.code('''
+  <label></label> is use to help format inputs
+  \n3Example:
+  \n<label for="nameforid">something</label>
+  ''')
+  "Input"
+  st.code('''
+  <input> is for inputs
+  \n#make sure to create a label
+  \nExample:
+  \n<input type=(types[text, reset, submit, password, email, tel, number, date, checkbox]) id="nameforyourid"
+  ''')
 with css:
   st.header("What to do")
   "Make a file and end it with a .css (option 1)"
@@ -95,8 +117,17 @@ with css:
   st.code('font-size:px;')
   st.code('background-color:namecolor or rgbcolor;')
   st.code('color:coloragain;')
-  st.code('border-reduis:px(how curvy it is)')
+  st.code('border-raduis:px(how curvy it is)')
   st.code('}')
+  "How to make a box"
+  st.code('<div id="name"></div>')
+  'In .Css file'
+  st.code('.name{')
+  st.code('width: px')
+  st.code('height: px')
+  st.code('background-color: color')
+  st.code('box-shadow:px px px')
+  st.code("}")
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
@@ -105,16 +136,16 @@ with javascript:
   st.code('<script src="nameofyourjs.js"></script>')
   st.header("Beginner Javascript")
   'variables:'
-  st.code('var num = 10(int) or "happy"(str) or True(boolean);')
+  st.code('let num = 10(int) or "happy"(str) or True(boolean);')
   'or'
-  st.code('var num;')
+  st.code('let num;')
   st.code('num = value;')
   'write values'
   st.code('console.log("This will appear in the console");')
   st.code('document.write("This will show on the website")')
   st.code('alert("This will make an alert")')
   'input'
-  st.code('ask-the-user=prompt("I think im asking the user! ")')
+  st.code('let ask-the-user=prompt("I think im asking the user! ")')
   'if statements'
   st.code('if ([string or int] [== or > or <] "something"){')
   st.code('(tab) something()')
@@ -127,7 +158,17 @@ with javascript:
   st.code('let random-number = Math.floor(Math.random() * max (if only ); is after it, max-1) + min')
   'function'
   st.code('function nameoffunction{next line}')
-  'p.s: list is same as python, except you need a #var'
+  "document.getElementById('')"
+  st.code('use document.getElementById().onclick = function for buttons or input')
+  "Example"
+  st.code('''
+  #in html file
+  \n<button id="idname">name</button>
+  \n#in css file
+  \ndocument.getElementById().onclick = function(){stuff} or nameoffunction()
+  ''')
+  st.code('use variable = document.getElementById().value to get the stuff from a input')
+  'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 with more:
   'Write stuff in js using id'
