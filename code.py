@@ -138,7 +138,10 @@ with css:
   ''')
   '<div></div> and <span></span>:'
   st.code('''
-  #div highlights a block while span only highlights unless you add (display: block;) to span{}''')
+  #div highlights a block while span only highlights unless you add (display: block;) to span{} 
+  \n#You can also do (display:inline) to make it so that the text is in other lines of text(no width and height)
+  \n#If you want the width and height included (display: incline-block)
+  ''')
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
