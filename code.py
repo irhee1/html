@@ -177,6 +177,38 @@ with css:
   \nbackground-attachment: fixed;
   \nbackground-size: cover;
   ''')
+  'position'
+  st.code('''#position:; is used for positioning or adding features to boxes
+  \nExample:
+  \n#box{
+  \nwidth:200px;
+  \nheight:200px;
+  \nbackground-color:rgb(200, 200, 255);
+  \nposition: (relative:add pos to it, fixed:doesn't take up space and follows scroll, absolute:pos related to another box, sticky:move along the scroll and takes up space)
+  ''')
+  'pseudo-classes'
+  st.code('''
+  #link
+  \na:link{ #link in no state
+  \ncolor:green;
+  \nfont-size:25px;
+  \n}
+  \na:hover{ #cursor is over the link
+    \ncolor:lightgreen;
+    \nfont-size:50px;
+  \n}
+  \na:active{ #clicking now
+  }\n
+  \na:visited{} # if has been visited
+  \n#you can use hover and active for other stuff too
+  \nli:not(:hover){} #if not hovered now
+  \nli:nth-child([which element 'number', or odd(all in odd), or even, or 3n(for every 3rd (num can change)), or 3n+1(starts with one)]){} #choose css to specific num(goes in order)
+  \n#shows if hovered
+  \n#idname somethinginid{
+  \ndisplay:none;}
+  \n#idname:hover somethinginid{
+  \ndisplay: block;}
+  ''')
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
