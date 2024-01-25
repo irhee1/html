@@ -57,6 +57,7 @@ with html:
   \nExample:
   \n<input type=(types[text, reset, submit, password, email, tel, number, date, checkbox]) id="nameforyourid"
   ''')
+  
 with css:
   st.header("What to do")
   "Make a file and end it with a .css (option 1)"
@@ -128,6 +129,13 @@ with css:
   st.code('background-color: color')
   st.code('box-shadow:px px px')
   st.code("}")
+  'overflow (connect to a div or span)'
+  st.code(''' #box{
+  \nborder: 2px solid;
+  \nheight: 100px;
+  \noverflow: (visible:shows text, hidden:content that you don't see is hidden, scroll:shows a scroll, auto: shows a scroll if it's needed)
+  \n}
+  ''')
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
@@ -167,7 +175,13 @@ with javascript:
   \n#in css file
   \ndocument.getElementById().onclick = function(){stuff} or nameoffunction()
   ''')
-  st.code('use variable = document.getElementById().value to get the stuff from a input')
+  st.code('''use variable = document.getElementById().value to get the stuff from a html input
+  \n#Example (in html file):
+  \n<label for="idname">Type something</label>
+  \n<input type="text" id="idname">
+  \n(in .js):
+  \nlet text = document.getElementById("idname").value;
+  ''')
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 with more:
@@ -185,3 +199,21 @@ with more:
   st.code('<button id ="name">name</button>')
   'in your js file'
   st.code('document.getElementById("name").onclick = function()')
+  'make a table'
+  st.code('''
+  <table border="0-more" style="background-color:color;">
+  \n<tr align="center style="background-color:color;">
+  <th width="1-more">
+  Stuff
+  </th>
+  ..repeat
+  </tr>
+  <tr(use same css used above)>
+  <td>
+  More stuff
+  </td>
+  </tr>
+  ''')
+  'favicon'
+  'in head'
+  st.code('<link rel="icon" type="image/jpg" href="imagename.jpg">')
