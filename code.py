@@ -57,7 +57,7 @@ with html:
   <input> is for inputs
   \n#make sure to create a label
   \nExample:
-  \n<input type=(types[text, reset, submit, password, email, tel, number, date, checkbox]) id="nameforyourid"
+  \n<input type=(types[text, reset, submit, password, email, tel, number, date, checkbox]) id="nameforyourid">
   ''')
   
 with css:
