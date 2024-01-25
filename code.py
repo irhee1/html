@@ -3,6 +3,8 @@ st.set_page_config(layout="wide")
 html, css, javascript, more = st.tabs(["html","css","javascript", "more"])
 with html:
   st.header("Format of an html")
+  st.code("Type this to get the format: !(tab)")
+  "If it doesn't work:"
   st.code('<html>')
   st.code('  <head>')
   st.code('  </head>')
@@ -141,6 +143,37 @@ with css:
   #div highlights a block while span only highlights unless you add (display: block;) to span{} 
   \n#You can also do (display:inline) to make it so that the text is in other lines of text(no width and height)
   \n#If you want the width and height included (display: incline-block)
+  ''')
+  "use float and margin to position your img and text"
+  "example:"
+  st.code('''
+  #MARGIN
+  p{
+  margin: px or auto(makes it stuck in the middle);
+  or
+  margin-left: px or auto(makes it stuck in the left side);
+  margin-right: px or auto(makes it stuck in the right side);
+  margin-top: px;
+  margin-bottom: px;
+  #FLOAT
+  img{
+  float:left(puts image to the left) or right(puts image to the right);
+  }
+  ''')
+  "edit box:"
+  st.code('''Add padding: px; if you want there to be a distance between the letters and the border
+  \nAdd box-sizing: border-box; if you want two boxes in the same row using float:left; or float:right;
+  \nAdd text-align: center; to put the text right in the middle
+  \nwrite in height: 100vh; if you want bg-color to take up all the space of the page
+  \n if you write the thing above and write in min-height: 50%;, the boxes will take 50% of the page''')
+  "Image as a background!"
+  st.code('''
+  body{
+  \nbackground-image: url(background.png);
+  \nbackground-repeat: no-repeat;
+  \nbackground-position: center;
+  \nbackground-attachment: fixed;
+  \nbackground-size: cover;
   ''')
   "Make sure to write ; at the end of each"
 with javascript:
