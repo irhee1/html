@@ -239,8 +239,12 @@ with css:
   ''')
   'box and img animations'
   st.code('''
-  #first step: make you animation
-  you can use percent (%) to make parts of your animation (max of 100%)
+  #first step: make a div
+  #in the html file
+  <div id="box"></div>
+  #second step: make your animation
+  in .css file
+  use percentage(%) to make parts of your animation (max of 100%)
   Example: 100%{transform: translateX(300px)} or 50%{transform: translateY(-300px)}
   Function you can add to animations (examples):
   ------
@@ -255,7 +259,7 @@ with css:
   75%{transform: translateX(-100px)}
   100%{transform: translateY(-100px)}
   }
-  #second step: add animation in box
+  #third step: add animation in box
   #box{
   width:px;
   height:px;
@@ -263,7 +267,7 @@ with css:
   animation-name: animationname;
   animation-duration: 5s;
   }
-  #OPTIONAL: third step: edit stuff
+  #OPTIONAL: fourth step: edit stuff
   addtobox{
   animation-direction: normal or alternate or reverse or altername reverse;
   animation-iteration-count: infinate or integer;
