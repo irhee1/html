@@ -268,7 +268,7 @@ with css:
   animation-direction: normal or alternate or reverse or altername reverse;
   animation-iteration-count: infinate or integer;
   animation-play-state: running or paused;
-  animation-timing-function: ease-in-out(sppeds and then slows) or linear(constant speed) or steps(int)(stop-motion effect)
+  animation-timing-function: ease-in-out(speeds and then slows) or linear(constant speed) or steps(int)(stop-motion effect)
   }
   ''')
   "Make sure to write ; at the end of each unless you are making a animation"
