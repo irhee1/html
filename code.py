@@ -220,7 +220,58 @@ with css:
   \ncontent:"hello";} #this will appear after each text
   ''')
   'you can use id or class to pseudo-class and pseudo-elements'
-  "Make sure to write ; at the end of each"
+  'transform images or boxes'
+  st.code('''
+  #box{
+  \ntransform: translateX(50px); move by x
+  \ntransform: translateY(50px); #move by y
+  \ntransform: translate(50px, 50px); #move by x and y
+  \ntransform: rotateX(135deg); #rotate by x
+  \ntransform: rotateY(135deg); #rotate by y
+  \ntransform: rotateZ(135deg, 135deg); #rotate by Z (3rd dimension)
+  \ntransform: scaleX(2); #widen the x 
+  \ntransform: scaleY(2); #widen the y
+  \ntransform: scale(2, 3); #widen the x and y
+  \ntransform: skewX(180deg); #skew in x
+  \ntransform: skewY(180deg); #skew in y
+  \ntransform: skew(180deg, 180deg); #skew in x and y
+  \n}
+  ''')
+  'box and img animations'
+  st.code('''
+  #first step: make you animation
+  you can use percent (%) to make parts of your animation (max of 100%)
+  Example: 100%{transform: translateX(300px)} or 50%{transform: translateY(-300px)}
+  Function you can add to animations (examples):
+  ------
+  all translates and other(right above this)
+  opacity: 1 or 0
+  background-color: color
+  box-shadow: px px px clr
+  #How to make you animatipn keyframe example:
+  @keyframes animationname{
+  25%{transform: translateX(100px)}
+  50%{transform: translateY(100px)}
+  75%{transform: translateX(-100px)}
+  100%{transform: translateY(-100px)}
+  }
+  #second step: add animation in box
+  #box{
+  width:px;
+  height:px;
+  background-color:color;
+  animation-name: animationname;
+  animation-duration: 5s;
+  }
+  #OPTIONAL: third step: edit stuff
+  addtobox{
+  animation-direction: normal or alternate or reverse or altername reverse;
+  animation-iteration-count: infinate or integer;
+  animation-play-state: running or paused;
+  animation-timing-function: ease-in-out(sppeds and then slows) or linear(constant speed) or steps(int)(stop-motion effect)
+  }
+  ''')
+  "Make sure to write ; at the end of each unless you are making a animation"
 with javascript:
   st.header("Add javascript")
   "Step 1: make a .js file"
