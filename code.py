@@ -209,6 +209,17 @@ with css:
   \n#idname:hover somethinginid{
   \ndisplay: block;}
   ''')
+  'pseudo-elements'
+  st.code('''
+  h1::first-letter{} #editting the first letter
+  \np::first-line{} #editting the first line
+  \np::selection{} #edditing the text that's highlighted
+  \nsomething::before{
+  \ncontent:"hi";} #this will appear before each text
+  \nsomething::after{
+  \ncontent:"hello";} #this will appear after each text
+  ''')
+  'you can use id or class to pseudo-class and pseudo-elements'
   "Make sure to write ; at the end of each"
 with javascript:
   st.header("Add javascript")
