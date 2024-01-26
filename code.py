@@ -77,17 +77,20 @@ with html:
   '---'
 with css:
   st.header("What to do")
+  '---'
   "Make a file and end it with a .css (option 1)"
   "Example"
   st.image("Screenshot 2024-01-23 at 7.44.54 PM.png")
   "Or use style in text (option 2)"
   st.image("Screenshot 2024-01-23 at 7.46.51 PM.png")
+  '---'
   st.header("Option 1")
   st.subheader("Add css")
   "in the head write this"
   "<head>"
   '<link rel="stylesheet" href="(name of .css).css">'
   "<head>"
+  '---'
   st.subheader("Edit body of html")
   "---"
   st.code("body{")
@@ -96,6 +99,7 @@ with css:
   st.code('border: 3px(wide) solid(types of borders:solid, dashed, dotted, double, groove, ridge, inset, outset, none);')
   st.code("display:flow-root(so images don't get out of the border);")
   st.code("}")
+  '---'
   st.subheader("Edit text like <p></p> or <h1></h1>")
   st.code('p{')
   st.code('color:color of the font')
@@ -112,6 +116,7 @@ with css:
   st.code('border-bottom: 3px solid rgb(255, 255, 255);')
   st.code('border-radius: (how curvy the border is[example: 25px]);')
   st.code('}')
+  '---'
   st.subheader("use id and classes")
   st.code('use #nameid for id="id"')
   "Example:"
@@ -125,11 +130,13 @@ with css:
   st.code(".name{}")
   "Ps. make sure to know id can only be used once while class can be used multiple times"
   "Also you can use class and id at the SAME TIME"
+  '---'
   st.subheader("Make a shadow")
   "write this in html BODY!"
   st.code('<h1 id="addashadow">Text</h1>')
   "In .Css"
   st.code("#addashadow{text-shadow: px px px namecolor or rgb, ...(this process can be used multiple times}")
+  '---'
   "Add css to a button"
   st.code('button{')
   st.code('font-size:px;')
@@ -137,6 +144,7 @@ with css:
   st.code('color:coloragain;')
   st.code('border-raduis:px(how curvy it is)')
   st.code('}')
+  '---'
   "How to make a box"
   st.code('<div id="name"></div>')
   'In .Css file'
@@ -146,19 +154,22 @@ with css:
   st.code('background-color: color')
   st.code('box-shadow:px px px')
   st.code("}")
+  '---'
   'overflow (connect to a div or span)'
   st.code(''' #box{
   \nborder: 2px solid;
   \nheight: 100px;
-  \noverflow: (visible:shows text, hidden:content that you don't see is hidden, scroll:shows a scroll, auto: shows a scroll if it's needed)
+  \noverflow: (visible:shows text, hidden:content that you don't see below the border is hidden, scroll:shows a scroll, auto: shows a scroll if it's needed)
   \n}
   ''')
-  '<div></div> and <span></span>:'
+  '---'
+  '<div></div> and <span></span> to a text:'
   st.code('''
   #div highlights a block while span only highlights unless you add (display: block;) to span{} 
   \n#You can also do (display:inline) to make it so that the text is in other lines of text(no width and height)
   \n#If you want the width and height included (display: incline-block)
   ''')
+  '---'
   "use float and margin to position your img and text"
   "example:"
   st.code('''
@@ -173,17 +184,21 @@ with css:
   #FLOAT
   img{
   float:left(puts image to the left) or right(puts image to the right);
+  #float allows text to be in the same row as the img
   }
   ''')
+  '---'
   "edit box:"
   st.code('''Add padding: px; if you want there to be a distance between the letters and the border
-  \nAdd box-sizing: border-box; if you want two boxes in the same row using float:left; or float:right;
+  \nAdd box-sizing: border-box; if you want two different boxes in the same row using float:left; or float:right;
   \nAdd text-align: center; to put the text right in the middle
   \nwrite in height: 100vh; if you want bg-color to take up all the space of the page
   \n if you write the thing above and write in min-height: 50%;, the boxes will take 50% of the page''')
+  '---'
   'make a table'
   st.code('''
-  <table border="0-int" style="background-color:color;">
+  #in html
+  \n<table border="0-int" style="background-color:color;">
   \n<tr align="center style="background-color:color;">
   <th width="1-more">
   Stuff
@@ -196,6 +211,7 @@ with css:
   </td>
   </tr>
   ''')
+  '---'
   "Image as a background!"
   st.code('''
   body{
@@ -205,6 +221,7 @@ with css:
   \nbackground-attachment: fixed;
   \nbackground-size: cover;
   ''')
+  '---'
   'position'
   st.code('''#position:; is used for positioning or adding features to boxes
   \nExample:
@@ -212,8 +229,9 @@ with css:
   \nwidth:200px;
   \nheight:200px;
   \nbackground-color:rgb(200, 200, 255);
-  \nposition: (relative:add pos to it, fixed:doesn't take up space and follows scroll, absolute:pos related to another box, sticky:move along the scroll and takes up space)
+  \nposition: (relative:add pos to it using up, down, left, and right, fixed:doesn't take up space and follows scroll, absolute:pos related to another box, sticky:move along the scroll and takes up space)
   ''')
+  '---'
   'pseudo-classes'
   st.code('''
   #link
@@ -237,17 +255,19 @@ with css:
   \n#idname:hover somethinginid{
   \ndisplay: block;}
   ''')
+  '---'
   'pseudo-elements'
   st.code('''
   h1::first-letter{} #editting the first letter
   \np::first-line{} #editting the first line
-  \np::selection{} #edditing the text that's highlighted
+  \np::selection{} #editing the text that's highlighted
   \nsomething::before{
   \ncontent:"hi";} #this will appear before each text
   \nsomething::after{
   \ncontent:"hello";} #this will appear after each text
   ''')
   'you can use id or class to pseudo-class and pseudo-elements'
+  '---'
   'transform images or boxes'
   st.code('''
   #box{
@@ -265,6 +285,7 @@ with css:
   \ntransform: skew(180deg, 180deg); #skew in x and y
   \n}
   ''')
+  '---'
   'box and img animations'
   st.code('''
   #first step: make a div
@@ -304,36 +325,47 @@ with css:
   }
   ''')
   "Make sure to write ; at the end of each unless you are making a animation"
+  '---'
 with javascript:
   st.header("Add javascript")
   "Step 1: make a .js file"
   "Step 2: type this line to the body of the html to run the javascript"
   st.code('<script src="nameofyourjs.js"></script>')
+  '---'
   st.header("Beginner Javascript")
+  '---'
   'variables:'
   st.code('let num = 10(int) or "happy"(str) or True(boolean);')
   'or'
   st.code('let num;')
   st.code('num = value;')
+  '---'
   'write values'
   st.code('console.log("This will appear in the console");')
   st.code('document.write("This will show on the website")')
   st.code('alert("This will make an alert")')
+  '---'
   'input'
   st.code('let ask-the-user=prompt("I think im asking the user! ")')
+  '---'
   'if statements'
   st.code('if ([string or int] [== or > or <] "something"){')
   st.code('(tab) something()')
   st.code('}')
+  '---'
   'else if and elif:'
   st.code('(else if (str > 20){}) and else{}')
+  '---'
   'while loop'
   st.code('while (condition){do something}')
+  '---'
   'random number'
   st.code('let random-number = Math.floor(Math.random() * max (if only ); is after it, max-1) + min')
+  '---'
   'function'
   st.code('function nameoffunction{next line}')
-  "document.getElementById('')"
+  '---'
+  "document.getElementById(''):"
   st.code('use document.getElementById().onclick = function for buttons or input')
   "Example"
   st.code('''
@@ -358,6 +390,7 @@ with javascript:
   \n(in .js):
   \nlet text = document.getElementById("idname").value;
   ''')
+  '---'
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 
