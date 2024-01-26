@@ -294,7 +294,8 @@ with css:
   #second step: make your animation
   in .css file
   use percentage(%) to make parts of your animation (max of 100%)
-  Example: 100%{transform: translateX(300px)} or 50%{transform: translateY(-300px)}
+  or use from and to to make parts move
+  Example: 100%{transform: translateX(300px)} or from and to{transform: translateY(-300px)}
   Function you can add to animations (examples):
   ------
   all translates and other(right above this)
