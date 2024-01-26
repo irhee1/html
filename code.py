@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(layout="wide")
-html, css, javascript, more = st.tabs(["html","css","javascript", "more"])
+html, css, javascript= st.tabs(["html","css","javascript"])
 with html:
   st.header("Format of an html")
   '---'
@@ -24,20 +24,30 @@ with html:
   "Example:"
   st.code('<a href="https://www.yourlink.com" target="_none"(_none or _parent) title="This will pop up when your cursor is on the link">this is the name of the link</a>')
   "P.S: where it states the name of the link, you can add an image there so that if you click the image, it will send you to the link!"
+  '---'
+  'Add a favicon:'
+  'In head'
+  st.code('<link rel="icon" type="image/jpg" href="imagename.jpg">')
+  '---'
   st.code("<img> is for an image")
   "Example:"
   st.code('<img src="yourimage.jpg" width="400" height="500 type="image/jpg">')
+  '---'
   st.code('<audio></audio> is used for audio')
   st.code('<audio controls(control stuff like volume) muted(volume is 0%) autoplay(plays automatically) loop(loops when finished)><source src="youraudio.mp3" type="audio/mpeg"></audio>')
+  '---'
   st.code('<video></video> is playing a video(has the same controls as audio and img)')
   "Example:"
   st.code('<video src="videoplaying.mp4" controls></video>')
+  '---'
   "Make a simple and advanced list"
   st.code("<ul></ul> and <li></li> is for a list")
   "Example"
   st.code("<ul>")
   st.code('(tab) <li>Something<li>')
   st.code('<ul>')
+  '---'
+  'Advanced list:'
   st.code('''
   <dl></dl>, <dt></dt>, and <dd></dd> can be used to also make a list
   \n#Example:
@@ -46,14 +56,16 @@ with html:
   \n<dd>facts facts factz</dd>
   \n</dl>
   ''')
+  '---'
   st.code('<button></buttton> is for a button')
   "Example:"
   st.code('<button>Name of this button</button>')
-  "label"
+  '---'
   st.code('''
   <label></label> is use to help format inputs
   \n3Example:
   \n<label for="nameforid">something</label>
+  '---'
   ''')
   "Input"
   st.code('''
@@ -62,7 +74,7 @@ with html:
   \nExample:
   \n<input type=(types[text, reset, submit, password, email, tel, number, date, checkbox]) id="nameforyourid">
   ''')
-  
+  '---'
 with css:
   st.header("What to do")
   "Make a file and end it with a .css (option 1)"
@@ -169,6 +181,21 @@ with css:
   \nAdd text-align: center; to put the text right in the middle
   \nwrite in height: 100vh; if you want bg-color to take up all the space of the page
   \n if you write the thing above and write in min-height: 50%;, the boxes will take 50% of the page''')
+  'make a table'
+  st.code('''
+  <table border="0-int" style="background-color:color;">
+  \n<tr align="center style="background-color:color;">
+  <th width="1-more">
+  Stuff
+  </th>
+  ..repeat
+  </tr>
+  <tr(use same css used above)>
+  <td>
+  More stuff
+  </td>
+  </tr>
+  ''')
   "Image as a background!"
   st.code('''
   body{
@@ -315,16 +342,6 @@ with javascript:
   \n#in css file
   \ndocument.getElementById().onclick = function(){stuff} or nameoffunction()
   ''')
-  st.code('''use variable = document.getElementById().value to get the stuff from a html input
-  \n#Example (in html file):
-  \n<label for="idname">Type something</label>
-  \n<input type="text" id="idname">
-  \n(in .js):
-  \nlet text = document.getElementById("idname").value;
-  ''')
-  'p.s: list is same as python, except you need a #let'
-  "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
-with more:
   'Write stuff in js using id'
   'Example:'
   "in the body"
@@ -334,26 +351,17 @@ with more:
   st.code('<script src="nameofyourjs.js"></script>')
   'In the .js file:'
   st.code('document.getElementById("selected-id")[.innerHTML if replace or .textContent if new] = "Whatyouwanttowrite"')
-  'button onclick'
-  'in your html file'
-  st.code('<button id ="name">name</button>')
-  'in your js file'
-  st.code('document.getElementById("name").onclick = function()')
-  'make a table'
-  st.code('''
-  <table border="0-more" style="background-color:color;">
-  \n<tr align="center style="background-color:color;">
-  <th width="1-more">
-  Stuff
-  </th>
-  ..repeat
-  </tr>
-  <tr(use same css used above)>
-  <td>
-  More stuff
-  </td>
-  </tr>
+  st.code('''use variable = document.getElementById().value to get the stuff from a html input
+  \n#Example (in html file):
+  \n<label for="idname">Type something</label>
+  \n<input type="text" id="idname">
+  \n(in .js):
+  \nlet text = document.getElementById("idname").value;
   ''')
-  'favicon'
-  'in head'
-  st.code('<link rel="icon" type="image/jpg" href="imagename.jpg">')
+  'p.s: list is same as python, except you need a #let'
+  "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
+
+  
+  
+  
+  
