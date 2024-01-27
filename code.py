@@ -445,9 +445,31 @@ with javascript:
   '---'
   st.code('''
   #how to set css in javascript
-  something = document.querySelector('id or something'[example:'#box'])
+  something = document.getElementById('id or something'[example:'#box'])
   box.style.addcss[example:transform = 'rotateZ(135deg)';
   ''')
+  '---'
+  st.code('''
+  #key buttons using addEventListener
+  document.addEventKeyListener('keydown', event =>{
+  var = event.key (arrows: ArrowUp, ArrowDown, ArrowLeft, ArrowRight)
+  })
+  ''')
+  '---'
+  st.code('''
+  #mouse events
+  box = document.getElementById('box')
+  box.addEventListener('click', event => {
+  event.style.backgroundColor = 'color' [if box is clicked, this event occurs]
+  })
+  box.addEventListener('mouseover', event =>{
+  [if mouse is hovered over the id, this event occurs]
+  })
+  box.addEventListener('mouseout', event => {
+  [if mouse is not hovered over the id, this event occurs]
+  })
+  ''')
+  '---'
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 
