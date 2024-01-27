@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page-title="website notes")
 html, css, javascript= st.tabs(["html","css","javascript"])
 with html:
   st.header("Format of an html")
@@ -336,15 +336,52 @@ with javascript:
   st.header("Beginner Javascript")
   '---'
   'variables:'
-  st.code('let num = 10(int) or "happy"(str) or True(boolean);')
+  st.code('var num = 10(int) or "happy"(str) or True(boolean)')
   'or'
-  st.code('let num;')
+  st.code('var num;')
   st.code('num = value;')
   '---'
   'write values'
-  st.code('console.log("This will appear in the console");')
+  st.code('console.log("This will appear in the console")')
   st.code('document.write("This will show on the website")')
   st.code('alert("This will make an alert")')
+  '---'
+  'set different value'
+  st.code('''
+  Number() allows a variable to be a int
+  String() allows a variable to be a str
+  Boolean() allows a variable to be a boolean
+  ''')
+  '---'
+  'limited ranges'
+  st.code('''
+  for(var i = 20(value to i); i >= 1(will run if this is true); i+=increment or i-=decrement){}''')
+  '---'
+  'switch and case'
+  st.code('''switch(var){
+  case (num or str):
+  something()
+  break
+  ...(repeat) 
+  ''')  
+  '---'
+  'string manipulation'
+  st.code('''
+  var = variable.replaceAll('- (can be changed)', '/(can be changed)') #replaces the '-' with '/'
+  var = variable.padStart(15 (can be changed), "0 (can be changed)") #would add 0's in the start if the chars aren't 15
+  var = variable.padEnd(15 (can be changed), "0 (can be changed)") "would add 0's in the end if the chars aren't 15
+  var = variable.charAt(0 (can be changed)) #would show the first number (str)
+  var = variable.indexOf('a' (can be changed)) #what is the first time it shows the letter 'a' (int)
+  var = variable.lastIndexOf('a' (can be changed)) #what is the last shows the letter 'a' (int)
+  var = variable.length() #how many chars there is in the str
+  var = variable.trim() #removes all the spaces
+  var = variable.toUpperCase() #all chars is uppercase (str)
+  var = variable.toLowerCase() #all chars is lowercase (str)
+  var = variable.startsWith('i' (can be changed)) #returns boolean if string starts with i
+  var = variable.endsWith('b') #returns boolean if string ends with b
+  var = variable.includes('e') #returns boolean if str includes e
+  var = variable.slice(0 (can be changed), 1 (can be changed)) #returns the first letter of a string (str)
+  ''')
   '---'
   'input'
   st.code('let ask-the-user=prompt("I think im asking the user! ")')
@@ -357,6 +394,14 @@ with javascript:
   'else if and elif:'
   st.code('(else if (str > 20){}) and else{}')
   '---'
+  'and (&&), or (||), or not(!)
+  st.code('''
+  #Example:
+  if (var == 0 && var == 1){}
+  if (var <= 0 || var >= 30){}
+  if (!var){}
+  ''')
+  '---'
   'while loop'
   st.code('while (condition){do something}')
   '---'
@@ -364,7 +409,7 @@ with javascript:
   st.code('let random-number = Math.floor(Math.random() * max (if only ); is after it, max-1) + min')
   '---'
   'function'
-  st.code('function nameoffunction{next line}')
+  st.code('function nameoffunction(){next line}')
   '---'
   "document.getElementById(''):"
   st.code('use document.getElementById().onclick = function for buttons or input')
@@ -392,6 +437,11 @@ with javascript:
   \nlet text = document.getElementById("idname").value;
   ''')
   '---'
+  st.code('''
+  #how to set css in javascript
+  something = document.querySelector('id or something'[example:'#box'])
+  box.style.addcss[example:transform = 'rotateZ(135deg)';
+  ''')
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
 
