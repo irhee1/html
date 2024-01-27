@@ -394,7 +394,7 @@ with javascript:
   'else if and elif:'
   st.code('(else if (str > 20){}) and else{}')
   '---'
-  'and (&&), or (||), or not(!)
+  'and (&&), or (||), or not(!)'
   st.code('''
   #Example:
   if (var == 0 && var == 1){}
