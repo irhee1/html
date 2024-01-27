@@ -304,10 +304,10 @@ with css:
   box-shadow: px px px clr
   #How to make you animatipn keyframe example:
   @keyframes animationname{
-  25%{transform: translateX(100px)}
-  50%{transform: translateY(100px)}
-  75%{transform: translateX(-100px)}
-  100%{transform: translateY(-100px)}
+  0%{transform: translate(0px, 0px)}
+  25%{transform: translate(200px, 0px)}
+  50%{transform: translate(200px, 200px)}
+  75%{transform: translate(0px, 200px)}
   }
   #third step: add animation in box
   #box{
