@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(layout="wide", page-title="website notes")
+st.set_page_config(layout="wide")
 html, css, javascript= st.tabs(["html","css","javascript"])
 with html:
   st.header("Format of an html")
