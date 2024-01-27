@@ -367,7 +367,7 @@ with javascript:
   '---'
   'string manipulation'
   st.code('''
-  var = variable.replaceAll('- (can be changed)', '/(can be changed)') #replaces the '-' with '/'
+  var = variable.replaceAll('- (can be changed)', '/ (can be changed)') #replaces the '-' with '/'
   var = variable.padStart(15 (can be changed), "0 (can be changed)") #would add 0's in the start if the chars aren't 15
   var = variable.padEnd(15 (can be changed), "0 (can be changed)") "would add 0's in the end if the chars aren't 15
   var = variable.charAt(0 (can be changed)) #would show the first number (str)
