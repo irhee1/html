@@ -65,8 +65,14 @@ with html:
   <label></label> is use to help format inputs
   \n3Example:
   \n<label for="nameforid">something</label>
-  '---'
   ''')
+  '---'
+  'iframe is a web page on a website'
+  st.code('''
+  #Example:
+  <iframe src="Website-name.com">
+  ''')
+  '---'
   "Input"
   st.code('''
   <input> is for inputs
