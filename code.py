@@ -494,7 +494,7 @@ with javascript:
   context.fillStyle = 'color'
   use context.stroke() and .fill() to make a shape with a border
   #change border thickness
-  context.lineWidth = num; (No '')
+  context.lineWidth = num
   ---
   #rectangle or square
   context.strokeRect(xpos(num), ypos(num), pxlength(num), pxwidth(num))
