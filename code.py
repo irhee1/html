@@ -512,6 +512,7 @@ with javascript:
   context.font = 'px font-name'
   context.fillText('text' (str), xpos (num), ypos (num))
   #p.s write values in int except for context.fillStyle, the first value of .fillText, and context.font
+  safe fonts: ['arial', 'verdana', 'tahoma', 'trebuchet ms', 'times new roman', 'georgia', 'garamond', 'courier new'] #also usable for html and css
   ''')
   '---'
   'wait'
