@@ -481,8 +481,8 @@ with javascript:
   #write this in html
   canvas = document.getElementById('canvasname');
   context = canvas.getContext('2d')
-  #draw a line
   ---
+  #draw a line
   context.beginPath()
   context.moveTo(0 (num), 0 (num)) #starting pos of line
   context.lineTo(750 (num), 500 (num)) #endind pos of line
@@ -493,6 +493,7 @@ with javascript:
   #change color of fill
   context.fillStyle = 'color'
   use context.stroke() and .fill() to make a shape with a border
+  ---
   #change border thickness
   context.lineWidth = num
   ---
