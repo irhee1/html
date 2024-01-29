@@ -470,8 +470,68 @@ with javascript:
   })
   ''')
   '---'
+  'canvas API'
+  st.code('''
+  #in the html write this
+  <canvas id="canvasname" width="num" height="num"></canvas>
+  #if you want to see the border, write this in a css file
+  #canvasname{
+  border: 1px solid black;
+  }
+  #write this in html
+  canvas = document.getElementById('canvasname');
+  context = canvas.getContext('2d')
+  #draw a line
+  ---
+  context.beginPath()
+  context.moveTo(0 (num), 0 (num)) #starting pos of line
+  context.lineTo(750 (num), 500 (num)) #endind pos of line
+  #p.s: line is based on width and height!
+  context.stroke() #type to make a line 
+  context.fill() #use this to fill in a shape using lineTo()
+  ---
+  #change color of fill
+  context.fillStyle = 'color'
+  use context.stroke() and .fill() to make a shape with a border
+  #change border thickness
+  context.lineWidth = num; (No '')
+  ---
+  #rectangle or square
+  context.strokeRect(xpos(num), ypos(num), pxlength(num), pxwidth(num))
+  #fill a rectangle
+  context.fillRect(xpos(num), ypos(num), pxlength(num), pxwidth(num))
+  #p.s: you can use .lineWidth and .fillStyle for rect
+  #you don't need a beginPath and .stroke for rect
+  ---
+  #circle
+  context.beginPath()
+  context.arc(xpos, ypos, radius, sAngle, eAngle) #for a full circle write '0' for sAngle and '2 * Math.PI' for eAngle
+  context.stroke(), context.fill() or both
+  ---
+  #text
+  context.font = 'px font-name'
+  context.fillText('text' (str), xpos (num), ypos (num))
+  #p.s write values in int except for context.fillStyle, the first value of .fillText, and context.font
+  ''')
+  '---'
+  'wait'
+  st.code('''
+  async function functionname() {
+  functionstuff()
+  #to wait
+  await sleep(num)
+  }
+  functionname()
+  #to make it actually wait type this:
+  async function sleep(milliseconds) {
+  return new Promise((resolve) => {setTimeout(resolve, milliseconds)
+  })
+  }
+  #p.s: wait is in milliseconds
+  ''')
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
+  "you might not need ; at the end"
 
   
   
