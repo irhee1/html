@@ -532,6 +532,15 @@ with javascript:
   }
   #p.s: wait is in milliseconds
   ''')
+  '---'
+  'Get xpos and ypos'
+  st.code('''
+  window.addEventListener('mousemove', event  => {
+  xpos = event.clientX
+  ypos = event.clientY
+  })
+  ''')
+  '---'
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
   "you might not need ; at the end"
