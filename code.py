@@ -451,7 +451,7 @@ with javascript:
   '---'
   st.code('''
   #key buttons using addEventListener
-  document.addEventKeyListener('keydown', event =>{
+  document.addEventListener('keydown', event =>{
   var = event.key (arrows: ArrowUp, ArrowDown, ArrowLeft, ArrowRight)
   })
   ''')
