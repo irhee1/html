@@ -492,6 +492,7 @@ with javascript:
   ---
   #change color of fill
   context.fillStyle = 'color'
+  context.strokeStyle = 'color'
   use context.stroke() and .fill() to make a shape with a border
   ---
   #change border thickness
