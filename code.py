@@ -515,6 +515,9 @@ with javascript:
   context.fillText('text' (str), xpos (num), ypos (num))
   #p.s write values in int except for context.fillStyle, the first value of .fillText, and context.font
   safe fonts: ['arial', 'verdana', 'tahoma', 'trebuchet ms', 'times new roman', 'georgia', 'garamond', 'courier new'] #also usable for html and css
+  ---
+  #clear entire screen
+  context.clearRect(0, 0, (thecanvasid).width [example: canvas.width], (thecanvasid).height)
   ''')
   '---'
   'wait'
