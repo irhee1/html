@@ -132,6 +132,7 @@ with css:
   st.code('use .nameclass for class="class')
   "Example:"
   st.code('<p class="name"></p>')
+  '---'
   "In .Css file"
   st.code(".name{}")
   "Ps. make sure to know id can only be used once while class can be used multiple times"
