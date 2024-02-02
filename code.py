@@ -474,7 +474,7 @@ you can also put html in document.write [example: document.write("<h1>This Works
   [if mouse is not hovered over the id, this event occurs]
   })
   ''')
-  "p.s: for EVERY .addEventListener, don't add it in a while loop, instead, put it before the while loop'
+  "p.s: for EVERY .addEventListener, don't add it in a while loop, instead, put it before the while loop"
   '---'
   'canvas API'
   st.code('''
