@@ -353,7 +353,7 @@ with javascript:
   'write values'
   st.code('console.log("This will appear in the console")')
   st.code('''document.write("This will show on the website")
-  you can also put html in document.write [example: document.write("<h1>This Works!</h1>")]
+you can also put html in document.write [example: document.write("<h1>This Works!</h1>")]
           ''')
   st.code('alert("This will make an alert")')
   '---'
