@@ -16,11 +16,13 @@ with html:
   st.code('<title>NameofWeb</title>')
   st.header("Types of text and stuff")
   "---"
-  st.code("<h1></h1> to <h5></h5> (bigger text to smaller text)")
-  st.code("<p></p> is a paragraph text (automatecaly starts at a new line (<br>)")
-  st.code("<pre></pre> is a paragraph text but it keeps its format")
-  st.code("<hr> is used to make a line")
-  st.code("<a></a> is used to make a link")
+  st.code("""<h1></h1> to <h5></h5> (bigger text to smaller text)")
+  \n<p></p> is a paragraph text (automatecaly starts at a new line (<br>)
+  \n<pre></pre> is a paragraph text but it keeps its format
+  \n<hr> is used to make a line
+  \n<a></a> is used to make a link
+  """)
+  
   "Example:"
   st.code('<a href="https://www.yourlink.com" target="_none"(_none or _parent) title="This will pop up when your cursor is on the link">this is the name of the link</a>')
   "P.S: where it states the name of the link, you can add an image there so that if you click the image, it will send you to the link!"
@@ -350,7 +352,9 @@ with javascript:
   '---'
   'write values'
   st.code('console.log("This will appear in the console")')
-  st.code('document.write("This will show on the website")')
+  st.code('''document.write("This will show on the website")
+  you can also put html in document.write [example: document.write("<h1>This Works!</h1>")]
+          ''')
   st.code('alert("This will make an alert")')
   '---'
   'set different value'
