@@ -553,6 +553,51 @@ you can also put html in document.write [example: document.write("<h1>This Works
   })
   ''')
   '---'
+  st.code('''
+#3d graphics on canvas
+#in html
+<canvas id='canvasid'></canvas>
+#in javascript
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js'
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js'
+const scene = new THREE.Scene() #to draw shapes
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth/window.innerHeight, 0.1, 1000) #how much you can see, aspect ratio
+const renderer = new THREE.WebGLRenderer({canvas: document.getElementById('canvasid')})
+renderer.setPixelRatio(window.devicePixelRatio)
+renderer.setSize(window.innerWidth, window.innerHeight) #width and height in px
+renderer.render(scene, camera)
+#change camera angle
+#Example:
+camera.position.setZ(100) or .setX or .setY
+#image as background
+const bg = new THREE.TextureLoader().load('nameofpicture.jpg')
+scene.background = bg
+#3d object
+const geometry = new THREE.TorusGeometry(10, 4, 19) or THREE.BoxGeometry(2, 2, 2) or THREE.SphereGeometry(1, 5, 4)
+const material = new THREE.MeshStandardMaterial() or .MeshBasicMaterial( wireframe:true )
+const shape = new THREE.Mesh(geometry, material)
+scene.add(shape)
+#to see it
+#option 1
+function animate() {
+requestAnimationFrame( animate )
+renderer.render(scene, camera)
+}
+#option 2
+#use a while loop, renderer.render, async function, and await sleep
+#change placement of object
+shape.position.set(1, 2, 3) #x, y, z
+#light
+const light = new THREE.AmbientLight(0xffffff)
+scene.add(light)
+#rotate image
+shape.rotation.x or .y or .z = num || int
+#helpers
+const grid = new THREE.GridHelper(200, 50)
+scene.add(grid) #grids
+
+  ''')
+  '---'
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
   "you might not need ; at the end"
