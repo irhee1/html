@@ -596,7 +596,8 @@ shape.rotation.x or .y or .z = num || int
 #helpers
 const grid = new THREE.GridHelper(200, 50)
 scene.add(grid) #grids
-for info click here --> [this](https://threejs.org/docs/#manual/en/introduction/Loading-3D-models)
+#controls
+const controls = new OrbitControls(camera, renderer.domElement)
   ''')
   '---'
   'p.s: list is same as python, except you need a #let'
