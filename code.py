@@ -560,6 +560,7 @@ you can also put html in document.write [example: document.write("<h1>This Works
 #in javascript
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js'
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js'
 const scene = new THREE.Scene() #to draw shapes
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth/window.innerHeight, 0.1, 1000) #how much you can see, aspect ratio
 const renderer = new THREE.WebGLRenderer({canvas: document.getElementById('canvasid')})
