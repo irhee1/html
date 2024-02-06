@@ -556,7 +556,8 @@ you can also put html in document.write [example: document.write("<h1>This Works
   st.code('''
 #3d graphics on canvas
 #in html
-<canvas id='canvasid' type='module'></canvas>
+<canvas id='canvasid'></canvas>
+<script src='code.js' type='module'></script>
 #in javascript
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js'
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js'
