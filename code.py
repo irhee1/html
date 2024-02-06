@@ -629,7 +629,7 @@ function animate() {
     renderer.render(scene, camera)
 }
 animate()
-''')
+  ''')
   '---'
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
