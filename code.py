@@ -601,7 +601,7 @@ scene.add(grid) #grids
 const controls = new OrbitControls(camera, renderer.domElement)
   ''')
 "Test code (just in case it doesn't work):"
-st.code("""
+  st.code("""
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js'
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js'
 const scene = new THREE.Scene()
@@ -630,10 +630,10 @@ function animate() {
 }
 animate()
   """)
-'---'
-'p.s: list is same as python, except you need a #let'
-"p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
-"you might not need ; at the end"
+  '---'
+  'p.s: list is same as python, except you need a #let'
+  "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
+  "you might not need ; at the end"
 
   
   
