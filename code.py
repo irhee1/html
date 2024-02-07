@@ -473,6 +473,7 @@ you can also put html in document.write [example: document.write("<h1>This Works
   box.addEventListener('mouseout', event => {
   [if mouse is not hovered over the id, this event occurs]
   })
+  type 'scroll' and type var = window.scrollY to find the position
   ''')
   "p.s: for EVERY .addEventListener, don't add it in a while loop, instead, put it before the while loop"
   '---'
