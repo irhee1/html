@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(layout="wide")
-html, css, javascript= st.tabs(["html","css","javascript"])
+html, css, javascript, puter= st.tabs(["html","css","javascript", "Puter AI])
 with html:
   st.header("Format of an html")
   '---'
@@ -635,6 +635,14 @@ animate()
   'p.s: list is same as python, except you need a #let'
   "p.s: make sure to add ; to the end of every line of code unless it is a if statement or a while loop"
   "you might not need ; at the end"
+with puter:
+  st.text("Type this into the body section:")
+  st.code('<script src="https://js.puter.com/v2/"></script>')
+  st.code("Models: \nuse 'gemini-2.0-flash' for lightning fast responses\nuse 'gpt-5-nano' for with decent response time and good reasoning\nuse 'gpt-5' for slow but elaborative responces\nuse 'o4-mini' for fantasic reasoning, except it's very slow\n'use 'o3' for complex reasoning [VERY SLOW]\n use 
+  
+  st.text("Chatbot ai:")
+  st.code("<script>\nputer.ai.chat('Why did the chicken cross the road?'[question]).then(response=>{\ndocument.getElementById('id').innerText =responce;\n});\n<script>
+          
 
   
   
